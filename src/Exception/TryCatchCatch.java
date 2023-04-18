@@ -13,9 +13,12 @@ public class TryCatchCatch {
         catch(Exception e)
         {
             System.out.println(" parent exception occure ");
-        }
-        
-        System.out.println(" rest of the code");
+        } 
+        finally
+        {
+           throw new ArithmeticException(" Arithmatic exception");
+        }      
+        //System.out.println(" rest of the code");
     }
     
 }

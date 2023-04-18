@@ -1,6 +1,8 @@
 package Exception;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class OveridingException {
     void display()
@@ -18,8 +20,11 @@ public class OveridingException {
     {
 
     }
-    void otherDisplay() throws IOException // if parent throws exception there is no need to throw child also
+    void otherDisplay()  throws IOException// if parent throws exception there is no need to throw child also
     {
 
+    }
+    public static void main(String[] args) {
+        
     }
  }
